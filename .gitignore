@@ -45,3 +45,9 @@ dist/
 dist-ssr/
 build/
 coverage/
+
+# Safe configuration templates
+!.env.example
+!backend/.env.example
+*.pem
+*.key

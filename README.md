@@ -1,3 +1,23 @@
+## Fork de portfólio — Felipe Ishizawa Diniz
+
+Este fork preserva o trabalho colaborativo e o histórico do grupo.
+Origem: https://github.com/viniciusMoraesChaves/AuraFinance
+A documentação do grupo atribui a Felipe e Pedro o trabalho de banco de dados, e a toda a equipe documentação, testes e decisões técnicas.
+Não foi adicionada uma licença de redistribuição: o projeto original tem finalidade acadêmica e ainda não possui licença formal.
+
+### Executar localmente
+
+1. Instale as dependências do front-end com `npm ci` na raiz.
+2. Copie `.env.example` para `.env`; `VITE_API_URL` deve apontar para sua API local.
+3. Em `backend`, execute `npm install` e copie `.env.example` para `.env`.
+4. Preencha `DATABASE_URL` com a conexão de um MySQL próprio e `JWT_SECRET` com uma chave aleatória exclusiva. Gere-a localmente com `node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"`.
+5. Inicie a API com `npm run dev` dentro de `backend` e o front-end com `npm run dev` na raiz.
+
+A API sincroniza os models com o banco ao iniciar. Use um banco local dedicado. Nunca reutilize chaves JWT de exemplos presentes no histórico e nunca publique `.env`, tokens ou URLs com credenciais. Variáveis `VITE_*` ficam visíveis no navegador.
+
+A revisão para publicação conferiu arquivos e histórico Git por padrões de segredos. Não substitui uma auditoria completa da aplicação. Build e testes funcionais não foram executados nesta publicação.
+
+---
 # 💰 AuraFinance
 
 ![Status](https://img.shields.io/badge/status-MVP%20publicado-brightgreen)
